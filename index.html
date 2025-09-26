@@ -206,8 +206,13 @@
         }
 
         function celebrate() {
-            // Play music
-            document.getElementById("birthdayMusic").play();
+            const music = document.getElementById("birthdayMusic");
+    
+            // Set volume to 30%
+            music.volume = 0.3;
+
+            // Play audio
+            music.play();
 
             // Create confetti effect
             for (let i = 0; i < 50; i++) {
